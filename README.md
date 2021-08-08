@@ -5,16 +5,34 @@ The dataset is related to life expectancy, health factors for 193 countries has 
 #### Approach:
 - **Data Cleaning**
   - Ckecking for relevant variable type 
+  - Renaming columns
   - Detecting and dealing with missing values in variables - **Imputation**
   - Detecting and dealing with Outliers in variables - **Winsorization**
 - **Data Visualization**
-  - 
+  - data description
+  - Correlation Matrix Heatmap
+
+![image](https://user-images.githubusercontent.com/81185267/128643468-db966863-75bc-496a-b726-3c78e2973d5a.png)
+![image](https://user-images.githubusercontent.com/81185267/128643531-a64a9989-d931-4c8b-a434-59242084dc4b.png)
+
+- **Feature Engineering**
+  - creating dummies for categorical values
+  - dropping highly correlated independent variables. In those cases, the variable which is most highly correlated to Life Expectancy (target variable) will be kept while the others will be dismissed.
+  - also dropping variables which are not very correlated with any of the other variables
+
+- **Model Building**
+  - Linear Regression
+  - Ridge
+  - Lasso
+
+- **Evaluation Metrics**
+  - R-squared value
+  - RMSE value
 
 
-Linear Regression, Ridge, Lasso, imputation, winsorization, R-squared value, dummies
+                                                                                      
 
-
-
+                                                                                                          
 --------------------------
 #### Variable Description:
 Format: variable (type) - description
